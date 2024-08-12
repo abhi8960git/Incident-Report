@@ -1,16 +1,14 @@
-import React from 'react'
 import { useState } from 'react';
 import { incidentAbi } from '../assets/abis/IncidentReport';
-import { useAccount, useReadContract, useWriteContract } from "wagmi";
+import { useAccount, useWriteContract } from "wagmi";
 import Loader from "@/components/ui/loader";
 import { useToast } from "@/components/ui/use-toast";
 import { rainbowkitConfig } from "@/config/rainbowkitConfig";
 import { waitForTransactionReceipt } from "wagmi/actions";
 import Button from '@/components/ui/button';
 
-type Props = {}
 
-const IncidentPage = (props: Props) => {
+const IncidentPage = () => {
   const { address } = useAccount();
 
   const { toast } = useToast();
