@@ -1,7 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
-import Footer from "@/components/Footer";
 import { Etherspot, Home, Wagmi } from "@/pages";
 import IncidentPage from "./pages/incidents";
 
