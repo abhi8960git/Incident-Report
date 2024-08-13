@@ -1,7 +1,8 @@
 import Button from "@/components/ui/button";
-
+import { useNavigate } from "react-router-dom";
 export function Home() {
- 
+  const navigate = useNavigate();
+
   return (
     <main className="max-w-[1100px] mx-auto">
       <section className="mx-auto flex flex-col items-center justify-center min-h-[90vh]">
@@ -18,7 +19,7 @@ export function Home() {
           here....
         </p>
         <div className="flex gap-5">
-          <Button className="mt-10 mx-auto flex gap-2 px-6">
+          <Button onClick={()=> navigate("/report")} className="mt-10 mx-auto flex gap-2 px-6">
            Get Started 
           </Button>
         </div>
