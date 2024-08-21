@@ -9,7 +9,7 @@ import Button from '@/components/ui/button';
 
 
 const IncidentPage = () => {
-  const { address } = useAccount();
+  const { address, chainId } = useAccount();
 
   const { toast } = useToast();
   const [text, setText] = useState("");
@@ -28,7 +28,7 @@ const IncidentPage = () => {
     try {
       const txHash = await writeContractAsync({
         abi: incidentAbi,
-        address: "0xf43A836Fc651972Db751Eb033D5B78D37718ad72",
+        address:  chainId == 80002 ? "0x631C4aFAb57A35F082C1FD9eBbB13e48e7289094" :"0xf43A836Fc651972Db751Eb033D5B78D37718ad72",
         functionName: "reportIncident",
         args: [text],
       });
