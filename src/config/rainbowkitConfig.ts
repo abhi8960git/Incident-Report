@@ -1,5 +1,5 @@
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import { optimismSepolia} from "wagmi/chains";
+import { optimismSepolia, polygonAmoy} from "wagmi/chains";
 
 export const rainbowkitConfig = getDefaultConfig({
   appName: "Rootstock Rainbowkit",
