@@ -1,5 +1,5 @@
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import {filecoinCalibration, optimismSepolia, polygonAmoy} from "wagmi/chains";
+import {arbitrum, arbitrumSepolia, filecoinCalibration, optimismSepolia, polygonAmoy, polygonZkEvmCardona} from "wagmi/chains";
 import { Chain } from "@rainbow-me/rainbowkit";
 
 const myCustomNetwork: Chain = {
@@ -24,5 +24,5 @@ const myCustomNetwork: Chain = {
 export const rainbowkitConfig = getDefaultConfig({
   appName: "Rootstock Rainbowkit",
   projectId: "73bfede1812912189a63f8b354eac692",
-  chains: [optimismSepolia,polygonAmoy,filecoinCalibration,myCustomNetwork],
+  chains: [optimismSepolia,polygonAmoy,filecoinCalibration,myCustomNetwork,polygonZkEvmCardona,arbitrumSepolia],
 });
