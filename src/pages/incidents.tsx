@@ -21,21 +21,22 @@ const IncidentPage = () => {
   };
 
   const { writeContractAsync } = useWriteContract();
-  var Address:String;
+  var Address: String;
 
-  if(chainId == 80002 ){
-    Address="0x631C4aFAb57A35F082C1FD9eBbB13e48e7289094"
-  }else if (chainId == 314159){
-    Address="0x5c64FE5459deD80a65CffE0edB2DbCc915759DC9"
-  }else if (chainId == 1029){
-    Address ="0xcD15e5068a63e919D3Cd83BC5bC77C57CFA4ccE2"
-  }else if (chainId == 421614){
-    Address ="0xA25F718a7831feb11c2e16E25747e73eaa6a8BCa"
-  }else if(chainId == 2442){
-    Address="0xcD15e5068a63e919D3Cd83BC5bC77C57CFA4ccE2"
+  if (chainId == 80002) {
+    Address = "0x631C4aFAb57A35F082C1FD9eBbB13e48e7289094"
+  } else if (chainId == 314159) {
+    Address = "0x5c64FE5459deD80a65CffE0edB2DbCc915759DC9"
+  } else if (chainId == 1029) {
+    Address = "0xcD15e5068a63e919D3Cd83BC5bC77C57CFA4ccE2"
+  } else if (chainId == 2442) {
+    Address = "0x69217B786fC0a8daA9F6DfE374C85a5052cD2389"
+  }
+  else if (chainId == 421614) {
+    Address = "0xA25F718a7831feb11c2e16E25747e73eaa6a8BCa"
   }
   else {
-    Address="0xf43A836Fc651972Db751Eb033D5B78D37718ad72"
+    Address = "0xf43A836Fc651972Db751Eb033D5B78D37718ad72"
   }
 
 
@@ -90,7 +91,7 @@ const IncidentPage = () => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            color:"black"
+            color: "black"
           }}
         >
           <label htmlFor="textInput">Enter your Report Here:</label>
