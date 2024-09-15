@@ -1,5 +1,5 @@
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import {arbitrum, arbitrumSepolia, filecoinCalibration, optimismSepolia, polygonAmoy, polygonZkEvmCardona} from "wagmi/chains";
+import {arbitrumSepolia, filecoinCalibration, optimismSepolia, polygonAmoy, polygonZkEvmCardona} from "wagmi/chains";
 import { Chain } from "@rainbow-me/rainbowkit";
 
 const myCustomNetwork: Chain = {
